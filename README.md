@@ -12,6 +12,7 @@ This is extremely experimental for now.
 
 I have the following commands running for me:
 
+    $ component build --use component-istanbul
     $ mkdir -p coverage && component test phantom -R node_modules/component-istanbul/reporter.js > coverage/coverage.json && istanbul report
 
 ## License
