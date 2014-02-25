@@ -4,7 +4,9 @@ instruments component files with istanbul coverage
 
 ## Installation
 
-    $ npm install component-istanbul
+    $ npm install component-istanbul istanbul
+
+**note**: This does not depend on `istanbul` directly, you need to install it yourself
 
 ## Usage
 
