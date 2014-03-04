@@ -12,10 +12,12 @@ module.exports = function (builder) {
 			return fn();
 		pkg.config.scripts.forEach(function (file) {
 			var fullPath = pkg.path(file);
-			var contents = fs.readFileSync(fullPath, 'utf8');
-			pkg.removeFile('scripts', file);
-			contents = instrumenter.instrumentSync(contents, fullPath);
-			pkg.addFile('scripts', file, contents);
+			try {
+				var contents = fs.readFileSync(fullPath, 'utf8');
+				pkg.removeFile('scripts', file);
+				contents = instrumenter.instrumentSync(contents, fullPath);
+				pkg.addFile('scripts', file, contents);
+			} catch (e) {}
 		});
 		fn();
 	});

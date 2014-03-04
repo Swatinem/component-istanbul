@@ -1,7 +1,7 @@
 {
   "name": "component-istanbul",
   "description": "instruments component files with istanbul coverage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "maintainers": [
     "Arpad Borsos <arpad.borsos@googlemail.com> (http://swatinem.de)"
