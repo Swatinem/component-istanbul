@@ -1,12 +1,13 @@
 {
   "name": "component-istanbul",
   "description": "instruments component files with istanbul coverage",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [],
   "maintainers": [
     "Arpad Borsos <arpad.borsos@googlemail.com> (http://swatinem.de)"
   ],
   "dependencies": {
+    "require-cwd": "*"
   },
   "peerDependencies": {
     "istanbul": "*"

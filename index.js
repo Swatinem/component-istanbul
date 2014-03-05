@@ -3,7 +3,7 @@
 
 var fs = require('fs');
 var path = require('path');
-var Istanbul = require(path.resolve('node_modules', 'istanbul'));
+var Istanbul = require('require-cwd')('istanbul');
 var instrumenter = new Istanbul.Instrumenter();
 
 module.exports = function (builder) {
