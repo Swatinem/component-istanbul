@@ -13,5 +13,5 @@
     "istanbul": "*"
   },
   "repository": "git://github.com/Swatinem/component-istanbul.git",
-  "license": "LGPLv3"
+  "license": "LGPL-3.0"
 }
